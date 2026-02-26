@@ -1,0 +1,68 @@
+spring:
+  application:
+    name: redis-redisson-demo
+
+# Redis Configuration
+redis:
+  secret-name: ${REDIS_SECRET_NAME:prod/elasticache/redis/auth}
+  cache-secret: true
+  secret-cache-ttl-seconds: 60
+  connection-timeout-seconds: 5
+  command-timeout-seconds: 3
+  auto-reconnect: true
+  max-retry-attempts: 3
+  enable-secret-refresh-check: true
+  secret-refresh-interval-seconds: 30
+  # Redisson specific
+  thread-count: 16
+  netty-threads: 32
+  connection-pool-size: 64
+  connection-minimum-idle-size: 10
+  idle-connection-timeout: 10000
+  connect-timeout: 10000
+  timeout: 3000
+  retry-attempts: 3
+  retry-interval: 1500
+  ping-connection-interval: 30000
+  keep-alive: true
+  tcp-no-delay: true
+
+# AWS Configuration
+aws:
+  region: ${AWS_REGION:us-east-1}
+
+# Server Configuration
+server:
+  port: 8080
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    com.example.redis: DEBUG
+    org.redisson: INFO
+    software.amazon.awssdk: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+# Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+# OpenAPI Configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html

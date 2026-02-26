@@ -1,0 +1,78 @@
+spring:
+  application:
+    name: aws-sqs-demo-test
+
+  # Test database configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/sqs_demo_test?useSSL=false&serverTimezone=UTC
+    username: test
+    password: test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # JPA test configuration
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  # Redis test configuration
+  redis:
+    host: localhost
+    port: 6379
+    database: 1  # Use different DB for tests
+    timeout: 3000ms
+
+# AWS test configuration (use mock/test credentials)
+aws:
+  credentials:
+    access-key: test-access-key
+    secret-key: test-secret-key
+  region:
+    static: us-east-1
+
+# SQS test configuration
+sqs:
+  enabled: false  # Disable actual SQS for tests
+  queue:
+    ticket: test-ticket-events.fifo
+    events: test-domain-events
+    long-task: test-long-task-queue
+    batch: test-batch-queue
+    reliable: test-reliable-queue
+
+  dlq:
+    name: test-dead-letter-queue
+    enabled: true
+    max-receive-count: 3
+
+  producer:
+    default-delay-seconds: 0
+    enable-deduplication: true
+    batch-size: 10
+
+  consumer:
+    visibility-timeout-seconds: 30
+    wait-time-seconds: 20
+    max-messages-per-poll: 10
+    enable-manual-ack: true
+
+  reconciliation:
+    enabled: true
+    timeout-minutes: 30
+    batch-size: 100
+    max-replay-count: 3
+
+# Server configuration
+server:
+  port: 0  # Random port for tests
+
+# Logging configuration
+logging:
+  level:
+    com.example.awssqs: DEBUG
+    org.springframework.test: INFO
+    org.hibernate.SQL: DEBUG

@@ -1,0 +1,140 @@
+spring:
+  application:
+    name: aws-sqs-demo
+
+  # 数据库配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/sqs_demo?useSSL=false&serverTimezone=UTC
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # JPA/Hibernate配置
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  # Redis配置（用于幂等性）
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 3000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+
+# AWS配置
+aws:
+  credentials:
+    access-key: ${AWS_ACCESS_KEY_ID:your-access-key}
+    secret-key: ${AWS_SECRET_ACCESS_KEY:your-secret-key}
+  region:
+    static: us-east-1
+
+# SQS配置
+sqs:
+  enabled: true
+
+  # 队列配置
+  queue:
+    ticket: ticket-events.fifo
+    events: domain-events
+    long-task: long-task-queue
+    batch: batch-queue
+    reliable: reliable-queue
+
+  # DLQ配置
+  dlq:
+    name: dead-letter-queue
+    enabled: true
+    max-receive-count: 3
+
+  # 生产者配置
+  producer:
+    default-delay-seconds: 0
+    enable-deduplication: true
+    batch-size: 10
+    message-timeout-seconds: 30
+
+  # 消费者配置
+  consumer:
+    visibility-timeout-seconds: 30
+    wait-time-seconds: 20
+    max-messages-per-poll: 10
+    enable-manual-ack: true
+
+  # 对账配置
+  reconciliation:
+    enabled: true
+    timeout-minutes: 30
+    batch-size: 100
+    max-replay-count: 3
+    cron: "0 */10 * * * ?"
+
+# IM消息系统配置
+im:
+  message:
+    max-retry: 5
+    timeout-seconds: 30
+
+  # IM对账配置
+  reconciliation:
+    enabled: true
+    pending-timeout-minutes: 5
+    sent-timeout-minutes: 10
+    processing-timeout-minutes: 15
+    batch-size: 100
+
+  # IM消息投递配置
+  delivery:
+    offline-storage-enabled: true
+    push-notification-enabled: true
+    recall-timeout-minutes: 2
+
+# AWS SQS IM队列配置
+aws:
+  sqs:
+    im-queue-url: ${AWS_SQS_IM_QUEUE_URL:https://sqs.us-east-1.amazonaws.com/123456789/im-messages}
+    im-queue-fifo-url: ${AWS_SQS_IM_FIFO_QUEUE_URL:https://sqs.us-east-1.amazonaws.com/123456789/im-messages.fifo}
+
+# 服务器配置
+server:
+  port: 8080
+
+# 日志配置
+logging:
+  level:
+    com.example.awssqs: DEBUG
+    com.amazonaws.services.sqs: INFO
+    software.amazon.awssdk.services.sqs: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+# 监控配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+# 应用信息
+info:
+  app:
+    name: AWS SQS Demo
+    description: AWS SQS message loss prevention demo
+    version: 1.0.0

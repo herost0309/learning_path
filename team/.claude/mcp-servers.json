@@ -1,0 +1,118 @@
+{
+  "// 说明": "MCP Server 配置模板 - 连接内部工具，让 AI Agent 能直接操作团队工具链",
+  "// 使用方法": "根据团队实际使用的工具取消注释并填写配置",
+
+  "mcpServers": {
+    "// ======== 项目管理工具 ========": {},
+
+    "jira": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-jira"],
+      "env": {
+        "JIRA_URL": "https://your-company.atlassian.net",
+        "JIRA_USERNAME": "",
+        "JIRA_API_TOKEN": ""
+      },
+      "// 说明": "连接 JIRA，Agent 可查询/更新 Issue，关联代码变更"
+    },
+
+    "// ======== 代码托管平台 ========": {},
+
+    "gitlab": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-gitlab"],
+      "env": {
+        "GITLAB_URL": "https://gitlab.your-company.com",
+        "GITLAB_TOKEN": ""
+      },
+      "// 说明": "连接 GitLab，Agent 可操作 MR、CI/CD、代码搜索"
+    },
+
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": ""
+      },
+      "// 说明": "连接 GitHub，Agent 可操作 PR、Issues、Actions"
+    },
+
+    "// ======== 数据库工具 ========": {},
+
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "POSTGRES_CONNECTION_STRING": "postgresql://user:password@localhost:5432/dbname"
+      },
+      "// 说明": "连接 PostgreSQL，Agent 可查询数据库结构（只读推荐）"
+    },
+
+    "mysql": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-mysql"],
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "readonly",
+        "MYSQL_PASSWORD": "",
+        "MYSQL_DATABASE": ""
+      },
+      "// 说明": "连接 MySQL，Agent 可查询数据库结构（只读推荐）"
+    },
+
+    "// ======== 文档与知识库 ========": {},
+
+    "confluence": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-confluence"],
+      "env": {
+        "CONFLUENCE_URL": "https://your-company.atlassian.net/wiki",
+        "CONFLUENCE_USERNAME": "",
+        "CONFLUENCE_API_TOKEN": ""
+      },
+      "// 说明": "连接 Confluence，Agent 可检索团队文档"
+    },
+
+    "// ======== 消息通知 ========": {},
+
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": ""
+      },
+      "// 说明": "连接 Slack，Agent 可发送构建/部署通知"
+    },
+
+    "// ======== 监控与日志 ========": {},
+
+    "// 自定义 MCP Server 示例": {},
+
+    "internal-docs": {
+      "command": "node",
+      "args": ["./scripts/mcp-server-internal-docs.js"],
+      "env": {
+        "DOCS_API_URL": "http://internal-docs-api.company.com",
+        "DOCS_API_KEY": ""
+      },
+      "// 说明": "自定义 MCP Server - 连接内部文档系统"
+    }
+  },
+
+  "// 安全注意事项": [
+    "1. 所有 API Token 通过环境变量注入，不要硬编码",
+    "2. 生产数据库连接使用只读账号",
+    "3. Agent 的数据库操作建议限制为只读查询",
+    "4. 定期审计 MCP Server 的访问日志",
+    "5. 使用 .env 文件管理密钥，确保 .env 在 .gitignore 中"
+  ],
+
+  "// 推荐接入顺序": [
+    "第一步: GitLab/GitHub（代码操作，价值最高）",
+    "第二步: JIRA（项目管理关联）",
+    "第三步: 数据库（只读查询，辅助开发）",
+    "第四步: 文档系统（知识检索）",
+    "第五步: 监控/通知（运维自动化）"
+  ]
+}

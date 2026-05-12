@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: redis-secrets-demo
+  cloud:
+    aws:
+      region:
+        static: cn-northwest-1
+      secretsmanager:
+        enabled: true
+
+redis:
+  cluster:
+    nodes: ${REDIS_CLUSTER_NODES:localhost:6379}
+  secret:
+    secret-id: ${SECRET_ID:redis/credentials}
+    poll-interval: 60
+
+logging:
+  level:
+    com.example.redissecret: DEBUG
+    io.lettuce.core.protocol: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

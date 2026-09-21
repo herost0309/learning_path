@@ -1,0 +1,851 @@
+{
+  "top": [
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.9245931182069044,
+      "difficulty": "EASY",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "2703",
+      "isFavor": false,
+      "solutionNum": 47,
+      "title": "Return Length of Arguments Passed",
+      "titleCn": "返回传递的参数的长度",
+      "titleSlug": "return-length-of-arguments-passed",
+      "topicTags": [],
+      "extra": {
+        "companyTagNum": 7,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/1789022307-MKYkAr-Weixin Image_20260910023756_924_2.png",
+            "slug": "amazon",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/45a64add888e66ff6d3c551bed948528715996937b877aaf6fdc08eae74789f5-google-logo-png-open-2000.png",
+            "slug": "google",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/be5ec360e803521d4f6bd7233729004b801bd6a67932d2c6a10db0343efbc5b2-unnamed-2.jpg",
+            "slug": "bloomberg",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.9167235961196885,
+      "difficulty": "EASY",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "2879",
+      "isFavor": false,
+      "solutionNum": 27,
+      "title": "Display the First Three Rows",
+      "titleCn": "显示前三行",
+      "titleSlug": "display-the-first-three-rows",
+      "topicTags": [],
+      "extra": {
+        "companyTagNum": 2,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/1789022307-MKYkAr-Weixin Image_20260910023756_924_2.png",
+            "slug": "amazon",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/45a64add888e66ff6d3c551bed948528715996937b877aaf6fdc08eae74789f5-google-logo-png-open-2000.png",
+            "slug": "google",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.9089919245077579,
+      "difficulty": "EASY",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "3838",
+      "isFavor": false,
+      "solutionNum": 48,
+      "title": "Weighted Word Mapping",
+      "titleCn": "带权单词映射",
+      "titleSlug": "weighted-word-mapping",
+      "topicTags": [
+        {
+          "id": "wg0rh",
+          "name": "Array",
+          "slug": "array",
+          "nameTranslated": "数组",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "dofid",
+          "name": "String",
+          "slug": "string",
+          "nameTranslated": "字符串",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "xeyjfe6",
+          "name": "Simulation",
+          "slug": "simulation",
+          "nameTranslated": "模拟",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 1,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/45a64add888e66ff6d3c551bed948528715996937b877aaf6fdc08eae74789f5-google-logo-png-open-2000.png",
+            "slug": "google",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.9074594398622315,
+      "difficulty": "EASY",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "2884",
+      "isFavor": false,
+      "solutionNum": 21,
+      "title": "Modify Columns",
+      "titleCn": "修改列",
+      "titleSlug": "modify-columns",
+      "topicTags": [],
+      "extra": {
+        "companyTagNum": 1,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/dc8ca8220e0392cd08f0832bf03d6df599fa081505f307f09fdc91139aa4b54b-c0c9bfecd0329eeeaee48437456956fea5fcb84185f37de7656eabfe54c595e1-unnamed-1.png",
+            "slug": "microsoft",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.897429157247253,
+      "difficulty": "EASY",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "2769",
+      "isFavor": false,
+      "solutionNum": 226,
+      "title": "Find the Maximum Achievable Number",
+      "titleCn": "找出最大的可达成数字",
+      "titleSlug": "find-the-maximum-achievable-number",
+      "topicTags": [
+        {
+          "id": "deo8r",
+          "name": "Math",
+          "slug": "math",
+          "nameTranslated": "数学",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 6,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/45a64add888e66ff6d3c551bed948528715996937b877aaf6fdc08eae74789f5-google-logo-png-open-2000.png",
+            "slug": "google",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/1789022307-MKYkAr-Weixin Image_20260910023756_924_2.png",
+            "slug": "amazon",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/be5ec360e803521d4f6bd7233729004b801bd6a67932d2c6a10db0343efbc5b2-unnamed-2.jpg",
+            "slug": "bloomberg",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.8967860068423842,
+      "difficulty": "EASY",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "3512",
+      "isFavor": false,
+      "solutionNum": 88,
+      "title": "Minimum Operations to Make Array Sum Divisible by K",
+      "titleCn": "使数组和能被 K 整除的最少操作次数",
+      "titleSlug": "minimum-operations-to-make-array-sum-divisible-by-k",
+      "topicTags": [
+        {
+          "id": "wg0rh",
+          "name": "Array",
+          "slug": "array",
+          "nameTranslated": "数组",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "deo8r",
+          "name": "Math",
+          "slug": "math",
+          "nameTranslated": "数学",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 3,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/45a64add888e66ff6d3c551bed948528715996937b877aaf6fdc08eae74789f5-google-logo-png-open-2000.png",
+            "slug": "google",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/1789022307-MKYkAr-Weixin Image_20260910023756_924_2.png",
+            "slug": "amazon",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/dc8ca8220e0392cd08f0832bf03d6df599fa081505f307f09fdc91139aa4b54b-c0c9bfecd0329eeeaee48437456956fea5fcb84185f37de7656eabfe54c595e1-unnamed-1.png",
+            "slug": "microsoft",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.8956706884315118,
+      "difficulty": "EASY",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "3898",
+      "isFavor": false,
+      "solutionNum": 17,
+      "title": "Find the Degree of Each Vertex",
+      "titleCn": "统计每个顶点的度",
+      "titleSlug": "find-the-degree-of-each-vertex",
+      "topicTags": [
+        {
+          "id": "nkrae",
+          "name": "Graph",
+          "slug": "graph",
+          "nameTranslated": "图",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "wg0rh",
+          "name": "Array",
+          "slug": "array",
+          "nameTranslated": "数组",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "uw538v",
+          "name": "Matrix",
+          "slug": "matrix",
+          "nameTranslated": "矩阵",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 0,
+        "hasVideoSolution": false,
+        "topCompanyTags": [],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.8939437844103159,
+      "difficulty": "EASY",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "3945",
+      "isFavor": false,
+      "solutionNum": 12,
+      "title": "Digit Frequency Score",
+      "titleCn": "计算数字频率得分",
+      "titleSlug": "digit-frequency-score",
+      "topicTags": [
+        {
+          "id": "wzve3",
+          "name": "Hash Table",
+          "slug": "hash-table",
+          "nameTranslated": "哈希表",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "deo8r",
+          "name": "Math",
+          "slug": "math",
+          "nameTranslated": "数学",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 0,
+        "hasVideoSolution": false,
+        "topCompanyTags": [],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.892824093547573,
+      "difficulty": "EASY",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "2881",
+      "isFavor": false,
+      "solutionNum": 26,
+      "title": "Create a New Column",
+      "titleCn": "创建新列",
+      "titleSlug": "create-a-new-column",
+      "topicTags": [],
+      "extra": {
+        "companyTagNum": 0,
+        "hasVideoSolution": false,
+        "topCompanyTags": [],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.8920512946013411,
+      "difficulty": "MEDIUM",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "2807",
+      "isFavor": false,
+      "solutionNum": 262,
+      "title": "Insert Greatest Common Divisors in Linked List",
+      "titleCn": "在链表中插入最大公约数",
+      "titleSlug": "insert-greatest-common-divisors-in-linked-list",
+      "topicTags": [
+        {
+          "id": "d9m3t",
+          "name": "Linked List",
+          "slug": "linked-list",
+          "nameTranslated": "链表",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "deo8r",
+          "name": "Math",
+          "slug": "math",
+          "nameTranslated": "数学",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "3vubuc",
+          "name": "Number Theory",
+          "slug": "number-theory",
+          "nameTranslated": "数论",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 4,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/1789022307-MKYkAr-Weixin Image_20260910023756_924_2.png",
+            "slug": "amazon",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/dc8ca8220e0392cd08f0832bf03d6df599fa081505f307f09fdc91139aa4b54b-c0c9bfecd0329eeeaee48437456956fea5fcb84185f37de7656eabfe54c595e1-unnamed-1.png",
+            "slug": "microsoft",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/1608896124-NAAKhT-images.png",
+            "slug": "bytedance",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    }
+  ],
+  "bottom": [
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.1685214626391097,
+      "difficulty": "HARD",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "LCP 82",
+      "isFavor": false,
+      "solutionNum": 25,
+      "title": "万灵之树",
+      "titleCn": "万灵之树",
+      "titleSlug": "cnHoX6",
+      "topicTags": [],
+      "extra": {
+        "companyTagNum": 1,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/1608896124-NAAKhT-images.png",
+            "slug": "bytedance",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.21024294156270518,
+      "difficulty": "HARD",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "LCP 60",
+      "isFavor": false,
+      "solutionNum": 32,
+      "title": "力扣泡泡龙",
+      "titleCn": "力扣泡泡龙",
+      "titleSlug": "WInSav",
+      "topicTags": [
+        {
+          "id": "nt875",
+          "name": "Tree",
+          "slug": "tree",
+          "nameTranslated": "树",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "d2tn7",
+          "name": "Dynamic Programming",
+          "slug": "dynamic-programming",
+          "nameTranslated": "动态规划",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "ehgq01",
+          "name": "Binary Tree",
+          "slug": "binary-tree",
+          "nameTranslated": "二叉树",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 0,
+        "hasVideoSolution": false,
+        "topCompanyTags": [],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.21330624250822502,
+      "difficulty": "EASY",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "LCR 001",
+      "isFavor": false,
+      "solutionNum": 599,
+      "title": "两数相除",
+      "titleCn": "两数相除",
+      "titleSlug": "xoh6Oh",
+      "topicTags": [
+        {
+          "id": "deo8r",
+          "name": "Math",
+          "slug": "math",
+          "nameTranslated": "数学",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 8,
+        "hasVideoSolution": true,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/1608896124-NAAKhT-images.png",
+            "slug": "bytedance",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/dc8ca8220e0392cd08f0832bf03d6df599fa081505f307f09fdc91139aa4b54b-c0c9bfecd0329eeeaee48437456956fea5fcb84185f37de7656eabfe54c595e1-unnamed-1.png",
+            "slug": "microsoft",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/1789022307-MKYkAr-Weixin Image_20260910023756_924_2.png",
+            "slug": "amazon",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.21787709497206703,
+      "difficulty": "MEDIUM",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "LCP 29",
+      "isFavor": false,
+      "solutionNum": 185,
+      "title": "乐团站位",
+      "titleCn": "乐团站位",
+      "titleSlug": "SNJvJP",
+      "topicTags": [
+        {
+          "id": "deo8r",
+          "name": "Math",
+          "slug": "math",
+          "nameTranslated": "数学",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 6,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/1608896124-NAAKhT-images.png",
+            "slug": "bytedance",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://assets.leetcode.cn/aliyun-lc-upload/uploaded_files/2020/04/a29f4ff2-772d-4e94-b034-fe2815298cc9/%E7%BD%91%E6%98%93logo-%E6%96%B9.png",
+            "slug": "netease",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/1789022307-MKYkAr-Weixin Image_20260910023756_924_2.png",
+            "slug": "amazon",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.22070799278811973,
+      "difficulty": "MEDIUM",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "8",
+      "isFavor": false,
+      "solutionNum": 5366,
+      "title": "String to Integer (atoi)",
+      "titleCn": "字符串转换整数 (atoi)",
+      "titleSlug": "string-to-integer-atoi",
+      "topicTags": [
+        {
+          "id": "dofid",
+          "name": "String",
+          "slug": "string",
+          "nameTranslated": "字符串",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 125,
+        "hasVideoSolution": true,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/1734432959-vAVkHO-Meta.png",
+            "slug": "facebook",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/dc8ca8220e0392cd08f0832bf03d6df599fa081505f307f09fdc91139aa4b54b-c0c9bfecd0329eeeaee48437456956fea5fcb84185f37de7656eabfe54c595e1-unnamed-1.png",
+            "slug": "microsoft",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/1789022307-MKYkAr-Weixin Image_20260910023756_924_2.png",
+            "slug": "amazon",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.22605413573246316,
+      "difficulty": "MEDIUM",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "29",
+      "isFavor": false,
+      "solutionNum": 2039,
+      "title": "Divide Two Integers",
+      "titleCn": "两数相除",
+      "titleSlug": "divide-two-integers",
+      "topicTags": [
+        {
+          "id": "nizi1",
+          "name": "Bit Manipulation",
+          "slug": "bit-manipulation",
+          "nameTranslated": "位运算",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "deo8r",
+          "name": "Math",
+          "slug": "math",
+          "nameTranslated": "数学",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 64,
+        "hasVideoSolution": true,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/1734432959-vAVkHO-Meta.png",
+            "slug": "facebook",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/1789022307-MKYkAr-Weixin Image_20260910023756_924_2.png",
+            "slug": "amazon",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/45a64add888e66ff6d3c551bed948528715996937b877aaf6fdc08eae74789f5-google-logo-png-open-2000.png",
+            "slug": "google",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.22633919119203896,
+      "difficulty": "HARD",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "3617",
+      "isFavor": false,
+      "solutionNum": 25,
+      "title": "Find Students with Study Spiral Pattern",
+      "titleCn": "查找具有螺旋学习模式的学生",
+      "titleSlug": "find-students-with-study-spiral-pattern",
+      "topicTags": [],
+      "extra": {
+        "companyTagNum": 0,
+        "hasVideoSolution": false,
+        "topCompanyTags": [],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.22723260852122282,
+      "difficulty": "HARD",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "3139",
+      "isFavor": false,
+      "solutionNum": 28,
+      "title": "Minimum Cost to Equalize Array",
+      "titleCn": "使数组中所有元素相等的最小开销",
+      "titleSlug": "minimum-cost-to-equalize-array",
+      "topicTags": [
+        {
+          "id": "n7hqh",
+          "name": "Greedy",
+          "slug": "greedy",
+          "nameTranslated": "贪心",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "wg0rh",
+          "name": "Array",
+          "slug": "array",
+          "nameTranslated": "数组",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "2men8m",
+          "name": "Enumeration",
+          "slug": "enumeration",
+          "nameTranslated": "枚举",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 1,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/dc8ca8220e0392cd08f0832bf03d6df599fa081505f307f09fdc91139aa4b54b-c0c9bfecd0329eeeaee48437456956fea5fcb84185f37de7656eabfe54c595e1-unnamed-1.png",
+            "slug": "microsoft",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.22762951334379905,
+      "difficulty": "MEDIUM",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "3664",
+      "isFavor": false,
+      "solutionNum": 19,
+      "title": "Two-Letter Card Game",
+      "titleCn": "两个字母卡牌游戏",
+      "titleSlug": "two-letter-card-game",
+      "topicTags": [
+        {
+          "id": "wg0rh",
+          "name": "Array",
+          "slug": "array",
+          "nameTranslated": "数组",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "wzve3",
+          "name": "Hash Table",
+          "slug": "hash-table",
+          "nameTranslated": "哈希表",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "dofid",
+          "name": "String",
+          "slug": "string",
+          "nameTranslated": "字符串",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "pxpqcm",
+          "name": "Counting",
+          "slug": "counting",
+          "nameTranslated": "计数",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "2men8m",
+          "name": "Enumeration",
+          "slug": "enumeration",
+          "nameTranslated": "枚举",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 1,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/45a64add888e66ff6d3c551bed948528715996937b877aaf6fdc08eae74789f5-google-logo-png-open-2000.png",
+            "slug": "google",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    },
+    {
+      "__typename": "QuestionLightNode",
+      "acRate": 0.23064914791205932,
+      "difficulty": "HARD",
+      "freqBar": 0,
+      "paidOnly": false,
+      "status": "NOT_STARTED",
+      "frontendQuestionId": "3398",
+      "isFavor": false,
+      "solutionNum": 12,
+      "title": "Smallest Substring With Identical Characters I",
+      "titleCn": "字符相同的最短子字符串 I",
+      "titleSlug": "smallest-substring-with-identical-characters-i",
+      "topicTags": [
+        {
+          "id": "wg0rh",
+          "name": "Array",
+          "slug": "array",
+          "nameTranslated": "数组",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "drclh",
+          "name": "Binary Search",
+          "slug": "binary-search",
+          "nameTranslated": "二分查找",
+          "__typename": "CommonTagNode"
+        },
+        {
+          "id": "2men8m",
+          "name": "Enumeration",
+          "slug": "enumeration",
+          "nameTranslated": "枚举",
+          "__typename": "CommonTagNode"
+        }
+      ],
+      "extra": {
+        "companyTagNum": 2,
+        "hasVideoSolution": false,
+        "topCompanyTags": [
+          {
+            "imgUrl": "https://pic.leetcode.cn/45a64add888e66ff6d3c551bed948528715996937b877aaf6fdc08eae74789f5-google-logo-png-open-2000.png",
+            "slug": "google",
+            "__typename": "CommonTagNode"
+          },
+          {
+            "imgUrl": "https://pic.leetcode.cn/78703b3d3d17ff1b249303bec7cd53d61ba4d1ff309f4293600ea7efe8b692ae-salesforce.png",
+            "slug": "salesforce",
+            "__typename": "CommonTagNode"
+          }
+        ],
+        "__typename": "QuestionExtraInfoNode"
+      }
+    }
+  ]
+}

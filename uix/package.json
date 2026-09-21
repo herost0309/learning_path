@@ -1,0 +1,15 @@
+{
+  "name": "uix",
+  "version": "0.1.0",
+  "description": "Local browser-exploration CLI built on Playwright — no browser extension required",
+  "type": "module",
+  "bin": {
+    "uix": "./bin/uix.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}

@@ -1,0 +1,10 @@
+name: login
+baseUrl: http://127.0.0.1:8931
+inputs:
+  email: demo@test.shop
+  password: demo123
+steps:
+  - open the login page
+  - sign in with the demo credentials
+assert:
+  - the Dashboard heading is visible

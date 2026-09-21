@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dynamic content test</title>
+</head>
+<body>
+  <h1>Dynamic page</h1>
+  <button id="load" data-testid="load-button">Load content</button>
+  <div id="target"></div>
+  <script>
+    document.getElementById('load').addEventListener('click', () => {
+      setTimeout(() => {
+        document.getElementById('target').innerHTML =
+          '<section><h2>Loaded section</h2><button data-testid="loaded-button">Loaded button</button></section>';
+      }, 1200);
+    });
+  </script>
+</body>
+</html>

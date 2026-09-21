@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "name": "login",
+  "createdAt": "2026-09-15T14:58:04.702Z",
+  "baseUrl": "http://127.0.0.1:8931",
+  "inputs": {
+    "email": "demo@test.shop",
+    "password": "demo123"
+  },
+  "steps": [
+    {
+      "id": "s1",
+      "kind": "goto",
+      "url": "http://127.0.0.1:8931/login.html"
+    },
+    {
+      "id": "s2",
+      "ref": "e7",
+      "kind": "fill",
+      "selector": "testid=\"login-email\"",
+      "text": "{{email}}"
+    },
+    {
+      "id": "s3",
+      "ref": "e13",
+      "kind": "fill",
+      "selector": "testid=\"login-password\"",
+      "text": "{{password}}"
+    },
+    {
+      "id": "s4",
+      "ref": "e16",
+      "kind": "click",
+      "selector": "role=heading[name=\"Sign in\"]"
+    },
+    {
+      "id": "s5",
+      "ref": "e24",
+      "kind": "click",
+      "selector": "testid=\"login-submit\""
+    },
+    {
+      "id": "s6",
+      "kind": "assert",
+      "assert": {
+        "kind": "text",
+        "expected": "Dashboard"
+      }
+    },
+    {
+      "id": "s7",
+      "kind": "goto",
+      "url": "http://127.0.0.1:8931/login.html"
+    },
+    {
+      "id": "s8",
+      "ref": "e7",
+      "kind": "fill",
+      "selector": "testid=\"login-email\"",
+      "text": "{{email}}"
+    },
+    {
+      "id": "s9",
+      "ref": "e11",
+      "kind": "click",
+      "selector": "role=heading[name=\"Sign in\"]"
+    },
+    {
+      "id": "s10",
+      "kind": "assert",
+      "assert": {
+        "kind": "visible",
+        "target": "css=h1"
+      }
+    },
+    {
+      "id": "s11",
+      "ref": "e33",
+      "kind": "fill",
+      "selector": "testid=\"login-password\"",
+      "text": "{{password}}"
+    },
+    {
+      "id": "s12",
+      "ref": "e44",
+      "kind": "click",
+      "selector": "testid=\"login-submit\""
+    },
+    {
+      "id": "s13",
+      "kind": "assert",
+      "assert": {
+        "kind": "text",
+        "expected": "Dashboard"
+      }
+    },
+    {
+      "id": "s14",
+      "kind": "assert",
+      "assert": {
+        "kind": "url",
+        "expected": "welcome"
+      }
+    },
+    {
+      "id": "s15",
+      "kind": "screenshot"
+    }
+  ],
+  "sourceSpec": "login.yaml"
+}

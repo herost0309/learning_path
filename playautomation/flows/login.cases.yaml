@@ -1,0 +1,13 @@
+# Case matrix for login.flow.json — variants explored beyond the happy path.
+# Authored manually (or by an agent); `playautomation cases --save` generates
+# rule-based variants (empty inputs) as a starting point.
+cases:
+  - name: happy-path
+  - name: wrong-password
+    inputs:
+      password: wrong-password
+    expectFail: true
+  - name: empty-email
+    inputs:
+      email: ""
+    expectFail: true

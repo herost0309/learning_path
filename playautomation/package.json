@@ -1,0 +1,41 @@
+{
+  "name": "playautomation-cli",
+  "version": "0.1.0",
+  "description": "Browser automation tool: high-level YAML steps, agent-driven exploration, deterministic replayable flows",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "playautomation": "./lib/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "lib",
+    "docs",
+    "test-pages",
+    "demos",
+    "!demos/output"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/bundle-snapshot.mjs",
+    "prepack": "npm run build",
+    "test": "vitest run",
+    "test:unit": "vitest run --dir tests/unit",
+    "test:e2e": "vitest run --dir tests/e2e",
+    "demo:explore": "node demos/01-explore-loop.mjs",
+    "demo:form": "node demos/02-form-controls.mjs",
+    "demo:replay": "node demos/03-record-save-replay.mjs"
+  },
+  "dependencies": {
+    "playwright-core": "^1.49.0",
+    "yaml": "^2.6.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+lib/
+results/
+*.err
+*.log
+
+# demo artifacts
+demos/output/
+*.tgz

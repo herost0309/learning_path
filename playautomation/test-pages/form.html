@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Form controls test</title>
+</head>
+<body>
+  <h1>Preferences</h1>
+  <form id="prefs">
+    <label for="plan">Plan</label>
+    <select id="plan" name="plan" data-testid="plan-select">
+      <option value="free">Free</option>
+      <option value="pro">Pro</option>
+      <option value="enterprise">Enterprise</option>
+    </select>
+    <label><input type="checkbox" id="newsletter" data-testid="newsletter-check"> Send newsletter</label>
+    <label><input type="radio" name="tier" value="a" data-testid="tier-a"> Tier A</label>
+    <label><input type="radio" name="tier" value="b" data-testid="tier-b"> Tier B</label>
+    <label for="notes">Notes</label>
+    <textarea id="notes" name="notes" data-testid="notes-field"></textarea>
+    <button type="button" id="save" data-testid="save-button">Save preferences</button>
+  </form>
+  <div id="saved" role="status"></div>
+  <script>
+    document.getElementById('save').addEventListener('click', () => {
+      const plan = document.getElementById('plan').value;
+      const news = document.getElementById('newsletter').checked;
+      document.getElementById('saved').textContent = `Saved: plan=${plan}, newsletter=${news}`;
+    });
+  </script>
+</body>
+</html>
